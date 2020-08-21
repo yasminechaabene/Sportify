@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58sp"
+    android:orientation="vertical"
+    android:background="@drawable/background_grey">
+
+    <TextView
+        android:id="@+id/workout_day_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/workout_repetitions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/workout_day_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/workout_finishdate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="3sp"
+        android:textSize="22sp"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sportify</string>
+    <string name="define_your_level">Define your current level</string>
+    <string name="define_your_level_description">Try for 1 minute to make the maximum number of push-ups (chest), rest 15 seconds and do the maximum number of squats (legs) in 2 minutes, rest 15 seconds and do the maximum amount of sit-ups (press) for 3 minutes. Do not embellish your results, if you start with the wrong level, it is possible to significantly reduce the effectiveness of the training. Even if your initial result will be more than modest, do not worry, you can achieve maximum success, if you are honest with ourselves, from the beginning to the end of the training.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="start_new">New plan</string>
+    <string name="start_new_question">Do you really want to start a new training plan? The current progress will be lost!</string>
+    <string name="workout_finished">You successfully finished the workout. I\'m proud of you! You are the hero of the day!</string>
+    <string name="done">Done</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="instructions">Sportify is a 6 month program that will insure you to loose fat  quickly and gain more muscle all this with only 3 exercises synchronized with resting time in between also the app provides 3 categories for the beginners the advanced and the expert so our app will be suitable for you.</string>
+    <string name="start_date">Start date</string>
+    <string name="level">Level</string>
+    <string name="last_workout">Last workout</string>
+    <string name="next_workout">Next workout</string>
+    <string name="start">Start</string>
+    <string name="continue_text">Continue</string>
+    <string name="start_new_text">Start New</string>
+    <string name="my_progress">My Progress</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="credits">Credits</string>
+    <string name="take_break">Take a break, stretch and prepare for the next training session</string>
+    <string name="you_have_no_plan">You have no active plan. Press \'Start\' button to start a new one.</string>
+    <string name="none">None</string>
+    <string name="you_finished_plan">You successfully finished the training plan. To start a new one press \'Start\'.</string>
+    <string name="current_plan_details">Your current plan details</string>
+    <string name="workout_instructions">Make %1$s push-ups (chest), then %2$s squats (legs), then %3$s sit-ups (press) and press \'Done\' when complete</string>
+    <string name="take_break_instructions">Take a break, stretch and prepare for the next session</string>
+    <string name="novice">5 or less push-ups, squats and sit-ups</string>
+    <string name="average">6-10 push-ups, squats and sit-ups</string>
+    <string name="above_average">20 or more push-ups, squats and sit-ups</string>
+</resources>

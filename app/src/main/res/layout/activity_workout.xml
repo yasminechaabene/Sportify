@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musculation"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WorkoutActivity">
+
+    <ImageView
+        android:id="@+id/w_header_label"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/workout" />
+
+    <TextView
+        android:id="@+id/w_description_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/w_header_label"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:text="Week 1/Day 1/Easy"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/w_count_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/w_description_label"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/w_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="5"
+        android:textColor="#ffffff"
+        android:textSize="180dp" />
+
+    <ImageView
+        android:id="@+id/w_pushups"
+        android:layout_width="120sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/w_count_list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/push_up" />
+
+    <ImageView
+        android:id="@+id/w_situps"
+        android:layout_width="115sp"
+        android:layout_height="100sp"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sit_up" />
+
+    <ImageView
+        android:id="@+id/w_squats"
+        android:layout_width="80sp"
+        android:layout_height="100sp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:src="@drawable/squat" />
+
+    <TextView
+        android:id="@+id/w_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="90"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <ProgressBar
+        android:id="@+id/w_timer_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/circular_progress_bar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="5sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/w_instructions_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/take_break"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/w_done_button"
+            style="@style/homeButton"
+            android:background="@drawable/red"
+            android:onClick="onDoneClick"
+            android:text="@string/done"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7435818698004676/6160093803"></com.google.android.gms.ads.AdView>
+</RelativeLayout>
